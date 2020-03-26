@@ -17,8 +17,13 @@ public class RegExpTest {
         {"http://192.168.1.1/index.html", "192.168.1.1"},
         {"This text contains a valid IP address 254.254.254.254, find it!", "254.254.254.254"},
         {"IP could not have negative numbers like -1.-2.-3.-4", ""},
-        {" Invalid IP: 300.300.300.300!", ""}
-        // TODO add 2 more test data here
+        {" Invalid IP: 300.300.300.300!", ""},
+        {"IP could not have negative numbers like -1.-2.-3.-4 but there is your localhost address 127.0.0.1.", "127.0.0.1"},
+            {"One more IP test: 255.255.255.255", "255.255.255.255"},
+            {"One more IP test: 256.255.0.255", ""},
+            {"One more IP test: 255.256.0.255", ""},
+            {"One more IP test: 255.255.256.255", ""},
+            {"One more IP test: 255.255.256.255", ""}
     };
   }
 
