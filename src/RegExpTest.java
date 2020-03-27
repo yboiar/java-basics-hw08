@@ -23,7 +23,7 @@ public class RegExpTest {
             {"One more IP test: 256.255.0.255", ""},
             {"One more IP test: 255.256.0.255", ""},
             {"One more IP test: 255.255.256.255", ""},
-            {"One more IP test: 255.255.256.255", ""}
+            {"One more IP test: 255.255.255.256", ""}
     };
   }
 
